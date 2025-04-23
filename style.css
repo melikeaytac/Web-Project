@@ -1,0 +1,195 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.slider-image,
+.carousel-inner img {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#side-news img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+#side-news h6 {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+#side-news p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+#left-ad img,
+#right-ad img {
+  max-width: 120px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#left-ad img:hover,
+#right-ad img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+.card h6 {
+  font-size: 1rem;
+}
+
+.card img {
+  max-height: 100px;
+  object-fit: cover;
+}
+.card:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+  transition: 0.3s ease;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.6;
+  margin: 3px;
+  transition: all 0.3s;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: #f8d210;
+}
+
+
+
+.weather-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+}
+#weather-widget div > div {
+  line-height: 1.4;
+}
+.day-box {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  min-width: 55px;
+  flex: 1 1 auto;
+}
+#weather-widget .day-box:hover {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  transform: scale(1.02);
+  transition: 0.3s ease;
+}
+
+table thead {
+  background-color: #dee2e6;
+}
+
+table th, table td {
+  text-align: center;
+}
+
+.finance-strip {
+  background-color: #f9f9f9;
+  padding: 10px 16px;
+  font-size: 1rem;
+  border-bottom: 1px solid #ddd;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  gap: 1.5rem;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.finance-strip > div {
+  flex-shrink: 0;
+  display: inline-block;
+  min-width: 140px;
+}
+.navbar-nav .nav-link {
+  position: relative;
+  transition: all 0.3s;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #f8d210;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+.navbar {
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to right, #f8d210, #fa26a0) 1;
+}
+.dropdown-menu {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #ccc;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #f8d210 !important;
+}
+.navbar-nav .dropdown-toggle::after {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .finance-strip {
+    font-size: 0.85rem;
+    gap: 1rem;
+    padding: 8px 12px;
+  }
+
+  .finance-strip > div {
+    min-width: 120px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .carousel-inner img {
+    max-height: 250px;
+  }
+
+  #side-news img {
+    height: 150px;
+  }
+} 
