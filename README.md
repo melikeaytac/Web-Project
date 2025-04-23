@@ -26,3 +26,5 @@ All dynamic content is fetched via mock APIs.
 - JavaScript (jQuery)  
 - Mocky.io (for mock API data)
 
+- Live Site:https://melikeaytac.github.io/Web-Project/
+
