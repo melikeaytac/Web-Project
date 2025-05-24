@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
   // APİLER
-  const newsApi = "https://run.mocky.io/v3/1234ccca-cfc2-4d15-8aeb-c310f83f0c04";
-  const weatherApi = "https://run.mocky.io/v3/77fbf412-0b1e-4b64-a996-b38ae09aea43";
-  const financeApi = "https://run.mocky.io/v3/63a7c74f-61ce-42d8-8f7c-dfb926f6fe67";
+  const newsApi = "https://mocki.io/v1/a3808162-037a-409a-8f58-6c583309378b";
+  const weatherApi = "https://mocki.io/v1/7214c0ba-ff62-44f6-9d8f-42c5628b482b";
+  const financeApi = "https://mocki.io/v1/e72e4cc3-5674-4209-938b-cdcd8b2748de";
 
   // HABER PAGING
   const pageSize = 5;
@@ -50,7 +50,7 @@ $(document).ready(function () {
     setInterval(showSideNews, 5000);
   });
 
-  // PAGING
+  // SAYFALAMA
   function renderNewsPage() {
     const start = (currentPage - 1) * pageSize;
     const end = start + pageSize;
